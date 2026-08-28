@@ -5,6 +5,35 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 移动端：去除 iOS 点击高亮、适配底部安全区、禁用横向溢出 */
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: default;
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* 限制全局字号缩放，避免某些 Android 浏览器强制放大 */
+html {
+  font-size: 100%;
+}
+
+/* 更符合触屏的可点击元素最小高度（44px 触控目标） */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 4.5rem;
+  }
 }
 
 .gradient-text {
@@ -25,12 +54,14 @@ html {
 }
 
 .demo-key {
-  transition: all 0.08s ease;
+  transition: background-color 0.06s ease, color 0.06s ease, transform 0.06s ease,
+    box-shadow 0.06s ease;
+  will-change: transform;
 }
 
 .demo-key.active {
   background: hsl(221 83% 53%);
   color: white;
-  transform: scale(0.95);
-  box-shadow: 0 0 12px hsl(221 83% 53% / 0.5);
+  transform: translateY(1px) scale(0.94);
+  box-shadow: 0 0 14px hsl(221 83% 53% / 0.55);
 }

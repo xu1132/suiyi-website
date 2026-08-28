@@ -55,16 +55,16 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-20 lg:py-28 bg-muted/30">
+    <section id="features" className="py-16 lg:py-28 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">为中英输入设计</h2>
           <p className="text-lg text-muted-foreground">
             从拼音到英文，从在线到离线，随译输入法在每个环节都做了针对性优化。
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {features.map((feature) => (
             <Card key={feature.title} className="group border-border/60 bg-card hover:border-primary/30 hover:shadow-lg transition-all duration-300">
               <CardHeader className="pb-3">

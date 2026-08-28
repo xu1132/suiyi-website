@@ -23,9 +23,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 lg:py-28">
+    <section id="how-it-works" className="py-16 lg:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">三步开始使用</h2>
           <p className="text-lg text-muted-foreground">
             无需注册账号，无需配置翻译密钥，安装后即可体验随打随译。

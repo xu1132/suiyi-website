@@ -34,16 +34,16 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-20 lg:py-28 bg-muted/30">
+    <section id="faq" className="py-16 lg:py-28 bg-muted/30">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 lg:mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">常见问题</h2>
           <p className="text-lg text-muted-foreground">关于随译输入法的常见疑问。</p>
         </div>
 
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-xl px-5 mb-3 shadow-sm">
+            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-xl px-4 sm:px-5 mb-3 shadow-sm">
               <AccordionTrigger className="text-left text-base font-medium hover:no-underline py-4">
                 {faq.question}
               </AccordionTrigger>
