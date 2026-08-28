@@ -5,7 +5,7 @@ const steps = [
     step: '01',
     icon: Download,
     title: '下载安装 APK',
-    description: '从 GitHub Releases 下载最新 APK，安装时允许「未知来源」应用安装。',
+    description: '点击下方下载按钮获取最新 APK，安装时允许「未知来源」应用安装。',
   },
   {
     step: '02',

@@ -24,20 +24,13 @@ npm run build
 
 ## 部署
 
-本仓库使用 GitHub Actions 自动部署到 GitHub Pages，并绑定自定义域名 `suiyiime.top`。
+推送 `main` 分支后，仓库内置的自动部署工作流（`.github/workflows/deploy.yml`）会自动构建并将 `dist/` 目录发布到托管站点，绑定自定义域名 `suiyiime.top`。
 
-每次推送到 `main` 分支后，Actions 会自动构建并将 `dist/` 目录部署到 `gh-pages` 分支。
+## 更新 APK
 
-## 自定义域名配置
+每次发布新版本时：
 
-1. 在 GitHub 仓库 **Settings → Pages → Custom domain** 中填写 `suiyiime.top`。
-2. 在 Cloudflare DNS 中为 `suiyiime.top` 添加 4 条 A 记录指向 GitHub Pages：
-   - 185.199.108.153
-   - 185.199.109.153
-   - 185.199.110.153
-   - 185.199.111.153
-3. 等待 DNS 生效，GitHub 会自动签发 SSL 证书。
+1. 将新编译的 APK 复制到 `public/downloads/` 目录，按版本号命名（如 `suiyiime-v1.1.apk`）。
+2. 更新 `src/sections/Download.tsx` 中的下载链接。
+3. 执行 `npm run build` 后重新部署。
 
-## 许可证
-
-MIT

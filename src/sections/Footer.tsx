@@ -1,4 +1,4 @@
-import { Github, Mail, Keyboard } from 'lucide-react';
+import { Mail, Keyboard } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -30,24 +30,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">项目</h4>
+            <h4 className="font-semibold mb-4">联系</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="https://github.com/xu1132/SuiyiIme" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
-                  <Github className="h-4 w-4" />
-                  SuiyiIme
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/xu1132/suiyi-backend" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
-                  <Github className="h-4 w-4" />
-                  suiyi-backend
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hello@suiyiime.top" className="hover:text-foreground transition-colors flex items-center gap-2">
+                <a href="mailto:1132115999@qq.com" className="hover:text-foreground transition-colors flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  hello@suiyiime.top
+                  1132115999@qq.com
                 </a>
               </li>
             </ul>
@@ -56,7 +44,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {currentYear} 随译输入法. All rights reserved.</p>
-          <p>MIT License · 离线词典 CC-CEDICT</p>
+          <p>离线词典 CC-CEDICT</p>
         </div>
       </div>
     </footer>
