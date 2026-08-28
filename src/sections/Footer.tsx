@@ -1,0 +1,64 @@
+import { Github, Mail, Keyboard } from 'lucide-react';
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-border bg-muted/30 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-10">
+          <div className="md:col-span-2 space-y-4">
+            <a href="#" className="flex items-center gap-2 font-bold text-xl text-foreground">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                <Keyboard className="h-5 w-5" />
+              </div>
+              <span>随译输入法</span>
+            </a>
+            <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
+              一款 Android 平台的中文拼音 → 中译英输入法。打拼音，出英文，随打随译。
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">链接</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li><a href="#features" className="hover:text-foreground transition-colors">功能特性</a></li>
+              <li><a href="#how-it-works" className="hover:text-foreground transition-colors">使用流程</a></li>
+              <li><a href="#faq" className="hover:text-foreground transition-colors">常见问题</a></li>
+              <li><a href="#download" className="hover:text-foreground transition-colors">下载</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-semibold mb-4">项目</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li>
+                <a href="https://github.com/xu1132/SuiyiIme" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  SuiyiIme
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/xu1132/suiyi-backend" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  suiyi-backend
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@suiyiime.top" className="hover:text-foreground transition-colors flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  hello@suiyiime.top
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+          <p>© {currentYear} 随译输入法. All rights reserved.</p>
+          <p>MIT License · 离线词典 CC-CEDICT</p>
+        </div>
+      </div>
+    </footer>
+  );
+}

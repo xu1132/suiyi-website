@@ -1,0 +1,36 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(199 89% 48%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, hsl(221 83% 53% / 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.demo-key {
+  transition: all 0.08s ease;
+}
+
+.demo-key.active {
+  background: hsl(221 83% 53%);
+  color: white;
+  transform: scale(0.95);
+  box-shadow: 0 0 12px hsl(221 83% 53% / 0.5);
+}
