@@ -14,7 +14,7 @@ export function DownloadSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base px-8 h-12" asChild>
-                <a href="downloads/suiyiime-latest.apk?v=1.1-9637f85" download>
+                <a href="downloads/suiyiime-latest.apk?v=1.1-46e4709" download>
                   <Download className="mr-2 h-5 w-5" />
                   下载最新 APK
                 </a>
