@@ -14,14 +14,14 @@ export function DownloadSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base px-8 h-12" asChild>
-                <a href="downloads/suiyiime-latest.apk?v=1.1-46e4709" download>
+                <a href="downloads/suiyiime-latest.apk?v=1.2-90a2333" download>
                   <Download className="mr-2 h-5 w-5" />
                   下载最新 APK
                 </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              当前版本 v1.1，约 15 MB，支持 Android 8.0+。
+              当前版本 v1.2，约 15 MB，支持 Android 8.0+。
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export function DownloadSection() {
                 <div>
                   <h3 className="font-semibold mb-1">版本信息</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    当前版本 v1.1，离线词典使用 CC-CEDICT。如遇问题可通过页面底部邮箱反馈。
+                    当前版本 v1.2，离线词典使用 CC-CEDICT。如遇问题可通过页面底部邮箱反馈。
                   </p>
                 </div>
               </CardContent>
