@@ -64,7 +64,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-3">
             <Button asChild>
-              <a href="downloads/suiyiime-latest.apk?v=1.2-99a0dde" download>
+              <a href="downloads/suiyiime-latest.apk?v=1.2-2249238" download>
                 <Download className="mr-2 h-4 w-4" />
                 下载 APK
               </a>
@@ -101,7 +101,7 @@ export function Navbar() {
             </a>
           ))}
           <Button className="mt-2 mb-4 w-full" size="lg" asChild>
-            <a href="downloads/suiyiime-latest.apk?v=1.2-99a0dde" download onClick={() => setMobileOpen(false)}>
+            <a href="downloads/suiyiime-latest.apk?v=1.2-2249238" download onClick={() => setMobileOpen(false)}>
               <Download className="mr-2 h-4 w-4" />
               下载 APK
             </a>
