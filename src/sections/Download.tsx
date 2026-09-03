@@ -14,14 +14,14 @@ export function DownloadSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base px-8 h-12" asChild>
-                <a href="downloads/suiyiime-latest.apk?v=1.2-87b44a4b" download>
+                <a href="downloads/suiyiime-latest.apk?v=1.2-1d5978e" download>
                   <Download className="mr-2 h-5 w-5" />
                   下载最新 APK
                 </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              当前版本 v1.2，约 52 MB，支持 Android 8.0+。
+              当前版本 v1.2，约 15 MB，支持 Android 8.0+。
             </p>
           </div>
 
