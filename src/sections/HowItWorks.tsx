@@ -16,8 +16,8 @@ const steps = [
   {
     step: '03',
     icon: Smartphone,
-    title: '切换并使用',
-    description: '在任意输入框切换到随译输入法，打拼拼音即可看到实时英文译文。',
+    title: '选择模式开始输入',
+    description: '在任意输入框切换到随译输入法，选择 26 键或九键；候选栏会同步显示中文候选和英文译文。',
   },
 ];
 
@@ -28,7 +28,7 @@ export function HowItWorks() {
         <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">三步开始使用</h2>
           <p className="text-lg text-muted-foreground">
-            无需注册账号，无需配置翻译密钥，安装后即可体验随打随译。
+            无需配置翻译密钥，安装后即可使用本地拼音；需要更完整的整句译文时，再开启在线精译。
           </p>
         </div>
 

@@ -10,7 +10,7 @@ export function DownloadSection() {
           <div className="space-y-5 lg:space-y-6">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">下载随译输入法</h2>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-              当前为早期测试版本，点击下方按钮直接下载 APK 安装包。安装前请允许「未知来源」应用安装。
+              下载最新 Android APK，安装前请允许「未知来源」应用安装。安装完成后，在系统设置中启用随译输入法即可开始使用。
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base px-8 h-12" asChild>
@@ -21,7 +21,7 @@ export function DownloadSection() {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              当前版本 v1.2，约 15 MB，支持 Android 8.0+。
+              当前版本 v1.2，约 52 MB，支持 Android 8.0+。
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export function DownloadSection() {
                 <div>
                   <h3 className="font-semibold mb-1">安全提示</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    当前为测试版，签名密钥仅用于开发与测试，请勿用于应用商店发布。正式上架前会替换为正式签名。
+                    当前为测试版，安装时请确认来源为 suiyiime.top。签名密钥仅用于开发与测试，请勿用于应用商店发布。
                   </p>
                 </div>
               </CardContent>

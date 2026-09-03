@@ -107,11 +107,11 @@ export function Hero() {
             <div className="flex flex-wrap gap-2 sm:gap-3">
               <Badge variant="secondary" className="px-3 py-1 text-xs font-medium">
                 <Sparkles className="mr-1 h-3 w-3" />
-                拼音直出英文
+                中英随打随译
               </Badge>
               <Badge variant="outline" className="px-3 py-1 text-xs font-medium">
                 <Shield className="mr-1 h-3 w-3" />
-                隐私优先
+                26 键 · 九键
               </Badge>
             </div>
 
@@ -121,7 +121,7 @@ export function Hero() {
                 <span className="gradient-text">出英文</span>
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-lg leading-relaxed">
-                随译输入法是一款 Android 中文拼音输入法。输入拼音时，候选栏实时显示整句英文译文，随打随译，让中英切换不再割裂。
+                随译输入法是一款 Android 中文拼音输入法。输入拼音时，候选栏同时展示中文候选与英文译文，支持 26 键、九键、离线词典和可选在线精译。
               </p>
             </div>
 
@@ -147,11 +147,11 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-blue-500" />
-                腾讯云在线精译
+                在线精译可选
               </div>
               <div className="flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-violet-500" />
-                5 万本地词条兜底
+                本地词典兜底
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@ export function Hero() {
                 <div className="rounded-2xl border border-primary/20 bg-primary/5 p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs text-primary font-medium">英文译文</span>
-                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary text-primary-foreground">点击上屏英文</span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary text-primary-foreground">可选上屏英文</span>
                   </div>
                   <div className="text-2xl font-bold text-primary min-h-[2rem]">
                     {current.english || <span className="opacity-30">...</span>}

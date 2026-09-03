@@ -15,7 +15,7 @@ export function Footer() {
               <span>随译输入法</span>
             </a>
             <p className="text-sm text-muted-foreground max-w-sm leading-relaxed">
-              一款 Android 平台的中文拼音 → 中译英输入法。打拼音，出英文，随打随译。
+              一款支持 26 键与九键的 Android 中文拼音输入法。中文候选、英文译文、在线与离线模式，按需选择。
             </p>
           </div>
 
