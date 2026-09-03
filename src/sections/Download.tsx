@@ -34,7 +34,7 @@ export function DownloadSection() {
                 <div>
                   <h3 className="font-semibold mb-1">安全提示</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    当前为测试版，安装时请确认来源为 suiyiime.top。签名密钥仅用于开发与测试，请勿用于应用商店发布。
+                    请仅从本页下载 APK，并确认地址为 suiyiime.top，避免使用来路不明的安装包。Android 安装时可能需要临时允许浏览器或文件管理器安装未知来源应用；安装完成后建议关闭该权限。随译输入法支持离线输入，只有开启在线精译时，待翻译内容才会请求云端服务。
                   </p>
                 </div>
               </CardContent>
